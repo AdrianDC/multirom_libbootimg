@@ -291,7 +291,7 @@ static int print_info(const char *path)
 
     printf ("* file name = %s\n\n", path);
 
-    printf ("* image size = %ld bytes (%.2f MB)\n", size, (double)size/0x100000);
+    printf ("* image size = %u bytes (%.2f MB)\n", (long)size, (double)size/0x100000);
     printf ("  page size  = %u bytes\n\n", img.hdr.page_size);
 
     printf ("* Boot Name = \"%s\"\n\n", name);
