@@ -26,6 +26,10 @@ LOCAL_MODULE := bbootimge_host
 LOCAL_MODULE_STEM := bbootimg
 LOCAL_MODULE_TAGS := optional
 
+LOCAL_32_BIT_ONLY := true
+LOCAL_CXX_STL := libc++_static
+LOCAL_FORCE_STATIC_EXECUTABLE := true
+
 include $(BUILD_HOST_EXECUTABLE)
 
 # bbootimg - dynamic binary for TWRP
